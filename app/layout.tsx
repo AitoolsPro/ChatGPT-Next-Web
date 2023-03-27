@@ -13,6 +13,11 @@ const COMMIT_ID = process
 export const metadata = {
   title: "ChatGPT Next Web",
   description: "Your personal ChatGPT Chat Bot.",
+  appleWebApp: {
+    title: "ChatGPT Next Web",
+    statusBarStyle: "black-translucent",
+  },
+  themeColor: "#fafafa"
 };
 
 function Meta() {
@@ -50,6 +55,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700;900&display=swap"
           rel="stylesheet"
         ></link>
+        <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>{children}</body>
     </html>
